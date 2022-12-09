@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">This is an essay for freeCodeCamp</p>
+    <form  id="survey-form" action="">
+        <label id="name-label">Name: </label><input required id="name" type="text" placeholder="Enter your name">
+        <br><br>
+        <label id="email-label">Email: </label><input required id="email" type="email" placeholder="Enter your email">
+        <br><br>
+        <label id="number-label">Age: </label><input id="number" type="number" min="1" max="120" placeholder="Age">
+        <br>
+        <label>Where you heard from us? </label>
+        <select name="select" id="dropdown">
+            <option value="Reddit">Reddit</option>
+            <option value="Google">Google</option>
+            <option value="Others">Others</option>
+        </select>
+        <br><br>
+        <label>Favorite language</label> <br>
+        <input type="radio" id="html" name="fav_lang" value="html">
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_lang" value="css">   
+        <label for="css">CSS</label>
+        <input type="radio" id="javascript" name="fav_lang" value="javascript">   
+        <label for="javascript">Javascript</label>
+        <input type="radio" id="ruby" name="fav_lang" value="ruby">   
+        <label for="ruby">Ruby</label>
+        <br><br>
+        <label for="checkbox">What's your main goal?</label>
+        <br><br>
+        <label><input name="goal" type="checkbox" value="study">Study</label>
+        <br>
+        <label><input name="goal" type="checkbox" value="work">Work</label>
+        <br>
+        <label><input name="goal" type="checkbox" value="hobby">Hobby</label>
+        <br>
+        <div>
+            <p>Tell us a little bit more about you</p>
+            <textarea name="bio" id="bio" cols="38" rows="10" placeholder="Enter your info here..."></textarea>
+        </div>
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+    </form>
+</body>
+</html>
